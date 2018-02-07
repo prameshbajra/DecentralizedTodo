@@ -22,11 +22,12 @@ App = {
     },
 
     initContract: function () {
-        $.getJSON('Todo.json', function (data) {
+        $.getJSON('../../build/contracts/Todo.json', function (data) {
             // Get the necessary contract artifact file and instantiate it with truffle-contract
+            console.log(data);
             var TodoArtifact = data;
             App.contracts.Todo = TruffleContract(TodoArtifact);
-            // Set the provider for our contract
+            // Set the provider for our contract ...
             App.contracts.Todo.setProvider(App.web3Provider);
             // Use our contract to retrieve and mark the adopted pets
             var todoInstance;

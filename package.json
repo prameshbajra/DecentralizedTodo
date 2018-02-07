@@ -7,13 +7,17 @@
         "test": "test"
     },
     "scripts": {
+        "start": "node index.js",
         "dev": "lite-server",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Pramesh Bajrachaarya",
+    "author": "Pramesh Bajracharya",
     "license": "ISC",
     "devDependencies": {
         "lite-server": "^2.3.0"
     },
-    "dependencies": {}
+    "dependencies": {
+        "express": "^4.16.2",
+        "truffle-hdwallet-provider": "0.0.3"
+    }
 }
