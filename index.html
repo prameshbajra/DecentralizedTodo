@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Decentralized Todo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert alert-info" role="alert" id="info">
+        </div>
+        <div class="row">
+            <h1>Decentralized Todo</h1>
+            <br>
+            <br>
+            <div class="col-md-3">
+                <textarea type="text" id="todo" class="form-control" placeholder="Add your task here ..."></textarea>
+                <br>
+                <button id="todoButton" class="btn btn-success btn-block">Add</button>
+                <br>
+                <br>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Made by
+                            <b>Pramesh Bajracharya</b>
+                        </h5><br>
+                        <h6>
+                            <ul>
+                                <li><b>Github</b> : prameshbajra</li>
+                                <br>
+                                <li><b>Instagram</b> : prameshbajra</li>
+                                <br>
+                                <li><b>Twitter</b> : prameshbajra</li>
+                                <br>
+                            </ul>
+                        </h6>
+                        <br>
+                        <a href="http://bajracharya.me" class="btn btn-primary btn-block" target="_blank">Contact me</a>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="jumbotron">
+                    <ul class = "list-group" id="todos"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
