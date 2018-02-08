@@ -22,7 +22,7 @@ App = {
     },
 
     initContract: function () {
-        $.getJSON('../../build/contracts/Todo.json', function (data) {
+        $.getJSON('../../compiledbuild/contracts/Todo.json', function (data) {
             // Get the necessary contract artifact file and instantiate it with truffle-contract
             console.log(data);
             var TodoArtifact = data;
