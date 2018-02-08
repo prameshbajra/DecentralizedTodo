@@ -14,11 +14,11 @@ contract Todo {
         }
     }
 
-    function setTodo(bytes32 todo) isMyAddress public {
+    function setTodo(bytes32 todo) public {
         todos.push(todo);
     }
 
-    function getTodo() isMyAddress constant public returns (bytes32[]) {
+    function getTodo() constant public returns (bytes32[]) {
         return todos;
     }
 
